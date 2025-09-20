@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kart Total Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("background.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 380px;
+    }
+    input {
+      width: 90%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #1976D2;
+    }
+    .output {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Kart Total Calculator</h2>
+    <p>Enter item prices separated by commas:</p>
+    <input type="text" id="items" placeholder="e.g. 200, 150, 50, 100">
+    <br>
+    <button onclick="calculateTotal()">Calculate Bill</button>
+    <div class="output" id="result"></div>
+  </div>
+  <script>
+  function calculateTotal() {
+    try {
+      let input = document.getElementById("items").value;
+      let prices = input.split(",").map(num => parseFloat(num.trim()));
+
+      if (prices.some(isNaN)) {
+        throw "Invalid input! Please enter only numbers.";
+      }
+
+      let total = prices.reduce((sum, price) => sum + price, 0);
+      let discount = 0;
+      let discountText = "No discount applied";
+
+      // Discount criteria
+      if (total >= 1000) {
+        discount = 0.20; 
+        discountText = "🥳🥳20% discount applied🥳🥳";
+      } else if (total >= 500) {
+        discount = 0.10; 
+        discountText = "🎉10% discount applied🎉";
+      }
+
+      let discountAmount = total * discount;
+      let finalAmount = total - discountAmount;
+
+      document.getElementById("result").innerHTML =
+        "Total Amount: ₹" + total.toFixed(2) +
+        "<br> " + discountText +
+        "<br> Discount: ₹" + discountAmount.toFixed(2) +
+        "<br> Final Payable: ₹" + finalAmount.toFixed(2);
+    } catch (error) {
+      document.getElementById("result").innerHTML = error;
+      document.getElementById("result").style.color = "red";
+    }
+  }
+</script>
+
+</body>
+</html>
