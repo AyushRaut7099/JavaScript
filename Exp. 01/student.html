@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Information</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="sit-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <header>
+    <h1>Student Information</h1>
+  </header>
+
+  <main>
+    <table border="1" cellpadding="10" cellspacing="0" align="center">
+      <tr>
+        <th>Name</th>
+        <th>Roll No</th>
+        <th>Year</th>
+        <th>Information/th>
+      </tr>
+
+      <!-- Student 1 -->
+      <tr>
+        <td>Aman Shrikhande</td>
+        <td>23070521010</td>
+        <td>3nd Year</td>
+        <td><button onclick="showInformation1()">View Information</button></td>
+      </tr>
+
+      <!-- Student 2 -->
+      <tr>
+        <td>Atharva Masharkar</td>
+        <td>23070521025</td>
+        <td>3nd Year</td>
+        <td><button onclick="showInformation2()">View Information</button></td>
+      </tr>
+      <tr>
+        <td>Ayush Raut</td>
+        <td>23070521028</td>
+        <td>3nd Year</td>
+        <td><button onclick="showInformation3()">View Information</button></td>
+      </tr>
+      <tr>
+        <td>Ved Bisne</td>
+        <td>23070521035</td>
+        <td>3nd Year</td>
+        <td><button onclick="showInformation4()">View Information</button></td>
+      </tr>
+      <tr>
+        <td>Harsh Motghare</td>
+        <td>23070521057</td>
+        <td>3nd Year</td>
+        <td><button onclick="showInformation5()">View Information</button></td>
+      </tr>
+
+    </table>
+
+    <br />
+    <a href="index.html" class="btn">Back to Department</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SIT Nagpur | Department of CSE</p>
+  </footer>
+
+  <script>
+    function showInformation1() {
+      alert(
+        "👤 Name: Aman Shrikhande \n" +
+        "📌 PRN: 23070521010\n" +
+        "🎂 DOB: 29/04/2005\n" +
+        "🔢 Age: 20\n" +
+        "💼 Skills: Python, HTML, JavaScript\n" +
+        "📧 Email: aman@gmail.com\n" +
+        "🎯 Hobbies: Coding, Reading, Badminton"
+      );
+    }
+
+    function showInformation2() {
+      alert(
+        "👤 Name: Atharva Masharkar\n" +
+        "📌 PRN: 9584758675\n" +
+        "🎂 DOB: 15/05/2005\n" +
+        "🔢 Age: 20\n" +
+        "💼 Skills: Java, C++, SQL, SQL Plus\n" +
+        "📧 Email: atharva@gmail.com\n" +
+        "🎯 Hobbies: Painting, Music"
+      );
+    }
+    function showInformation3() {
+      alert(
+        "👤 Name: Ayush Raut\n" +
+        "📌 PRN: 9511894058\n" +
+        "🎂 DOB: 28/02/2005\n" +
+        "🔢 Age: 20\n" +
+        "💼 Skills: Java, C++, SQL, Python\n" +
+        "📧 Email: ayush@gmail.com\n" +
+        "🎯 Hobbies: Badminton Music"
+      );
+    }
+    function showInformation4() {
+      alert(
+        "👤 Name: Ved Bisne\n" +
+        "📌 PRN: 8218032569\n" +
+        "🎂 DOB: 22/03/2005\n" +
+        "🔢 Age: 20\n" +
+        "💼 Skills: Java, C++, SQL, C\n" +
+        "📧 Email: ved@gmail.com\n" +
+        "🎯 Hobbies: Swimming, badminton"
+      );
+    }
+    function showInformation5() {
+      alert(
+        "👤 Name: Harsh Motghare\n" +
+        "📌 PRN: 7218032582\n" +
+        "🎂 DOB: 09/06/2005\n" +
+        "🔢 Age: 20\n" +
+        "💼 Skills: Java, C++, SQL, AIML\n" +
+        "📧 Email: harsh@gmail.com\n" +
+        "🎯 Hobbies: Painting, Music, Chess, Football"
+      );
+    }
+  </script>
+</body>
+</html>
