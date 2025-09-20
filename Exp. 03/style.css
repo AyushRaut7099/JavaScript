@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('background.jpg');
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 200px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}.grade-output {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.grade-a-plus {
+  color: green;
+}
+
+.grade-b {
+  color: orange;
+}
+
+.grade-c {
+  color: #e67e22;
+}
+
+.grade-fail {
+  color: red;
+}

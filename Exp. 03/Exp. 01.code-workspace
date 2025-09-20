@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../Exp. 01"
+		},
+		{
+			"path": "../Exp. 02"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Exp. 04"
+		},
+		{
+			"path": "../Exp. 05"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Exp. 02"
+	}
+}
