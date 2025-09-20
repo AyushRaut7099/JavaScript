@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Shopping</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Online Shopping Store</h1>
+  </header>
+
+  <main>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <section class="products">
+      <article class="product">
+        <img src="shoe.jpg" alt="Shoes" class="product-img" />
+        <h2>Shoes</h2>
+        <p>Price: ₹1000</p>
+        <label>Quantity:
+          <input type="number" min="0" value="0" class="qty" data-price="1000" />
+        </label>
+      </article>
+
+      <article class="product">
+        <img src="shirt.jpg" alt="Shoes" class="product-img" />
+        <h2>Shirt</h2>
+        <p>Price: ₹500</p>
+        <label>Quantity:
+          <input type="number" min="0" value="0" class="qty" data-price="500" />
+        </label>
+      </article>
+
+      <article class="product">
+        <img src="Watch.jpg" alt="Shoes" class="product-img" />
+        <h2>Watch</h2>
+        <p>Price: ₹1500</p>
+        <label>Quantity:
+          <input type="number" min="0" value="0" class="qty" data-price="1500" />
+        </label>
+      </article>
+    </section>
+
+    <button onclick="calculateBill()">Calculate Bill</button>
+    <div id="receipt">
+  <h3>Bill Receipt</h3>
+  <pre id="bill-details">Total: ₹0</pre>
+</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ayush's Shopping Site</p>
+    <p id="time"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
