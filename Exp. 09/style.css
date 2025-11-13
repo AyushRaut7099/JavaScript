@@ -1,0 +1,69 @@
+/* Default Light Mode */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 400px;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 10px;
+}
+
+/* Button Style */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Info Section */
+.info {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* 🌙 Dark Mode Theme */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .container {
+  background: rgba(40, 40, 40, 0.9);
+  box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+}
+
+.dark-mode button {
+  background-color: #ff9800;
+}
+
+.dark-mode button:hover {
+  background-color: #e68900;
+}

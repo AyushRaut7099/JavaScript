@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theme Switcher | Web Storage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Theme Switcher</h1>
+    <p>Switch between Light and Dark themes. Your choice will be saved using <b>localStorage</b>.</p>
+    
+    <button id="toggleTheme">Switch Theme</button>
+
+    <div class="info">
+      <p><b>Session Reload Count:</b> <span id="reloadCount">0</span></p>
+      <p><small>Reloads are tracked using <b>sessionStorage</b>.</small></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
