@@ -1,0 +1,9 @@
+{
+  "students": [
+    { "id": 101, "name": "Aman Shrikhande", "course": "Computer Science", "year": "3rd Year", "grade": "A" },
+    { "id": 102, "name": "Ayush Raut", "course": "Information Technology", "year": "2nd Year", "grade": "B+" },
+    { "id": 103, "name": "Ved Bisne", "course": "Mechanical", "year": "4th Year", "grade": "A+" },
+    { "id": 104, "name": "Rugved Gadge", "course": "Electrical", "year": "1st Year", "grade": "B" },
+    { "id": 105, "name": "Harsh Motghare", "course": "AI & ML", "year": "3rd Year", "grade": "A+" }
+  ]
+}
